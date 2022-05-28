@@ -1,5 +1,6 @@
 import styles from "../../styles/Home.module.css";
 import { SearchInput } from "../../components/SearchInput";
+import { Banner } from "../../components/Banner";
 
 const Home = () => {
   const handleSearch = (searchValue: string) => {
@@ -27,6 +28,8 @@ const Home = () => {
           <SearchInput mainColor="#fb9400" onSearch={handleSearch} />
         </div>
       </header>
+
+      <Banner />
     </div>
   );
 };
